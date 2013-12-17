@@ -114,7 +114,10 @@ function saveScore() {
         </div>
         <ul class="friend-scores"></ul>
         <img class="loader" src="img/loading.gif"/>
-        <div class="filter" style="display: none;"><div class="fail">Finish !</div></div>
+        <div class="filter" style="display: none;">
+            <div class="fail">Finish !</div>
+            <div class="nhs">New high score !</div>
+        </div>
         <a class="reload" href="#" onClick="window.location.reload();"><img src="img/restart.png"/></a>
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="scriptTime2.js"></script>
