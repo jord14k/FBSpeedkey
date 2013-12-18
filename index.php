@@ -1,5 +1,5 @@
 <?php
-    require_once 'facebook.php';
+    require 'facebook.php';
 
     $app_id = '697149053642863';
     $app_secret = '7054403e5f2f3d12e962b35b97e1b53a';
