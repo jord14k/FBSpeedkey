@@ -1,6 +1,6 @@
 <?php
     $facebook->api('/me/scores/', 'post', array(
-        'access_token' => $access_token,
+        'access_token' => $_POST["s"],
         'score' => $_POST["p"]
     ));
 ?>
