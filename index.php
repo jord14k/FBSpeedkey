@@ -1,6 +1,8 @@
 <?php
     require 'facebook.php';
 
+    global $facebook;
+            
     $app_id = '697149053642863';
     $app_secret = '7054403e5f2f3d12e962b35b97e1b53a';
     $app_namespace = 'speedkey';
@@ -8,10 +10,15 @@
     $scope = 'publish_actions, user_games_activity';
 
     // Init the Facebook SDK
-    $facebook = new Facebook(array(
-         'appId'  => $app_id,
-         'secret' => $app_secret,
-    ));
+    
+    if (! ( isset($facebook) ))
+    {
+        $facebook = new Facebook(array(
+             'appId'  => $app_id,
+             'secret' => $app_secret,
+        ));
+    }
+    
 
 // Get the current user
 $user = $facebook->getUser();
