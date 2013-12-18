@@ -1,1 +1,837 @@
-var _0x2bf4=["\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A","\x6B\x6E\x6F\x62","\x2E\x64\x69\x61\x6C","\x2E\x68\x74\x69\x6D\x65\x72","\x68\x69\x64\x65","\x2E\x6C\x6F\x61\x64\x65\x72","\x66\x61\x64\x65\x49\x6E","\x23\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72","\x6B\x65\x79\x70\x72\x65\x73\x73","\x6F\x6E\x65","\x33\x30\x30\x70\x78","\x31\x30\x30\x70\x78","\x66\x61\x73\x74","\x61\x6E\x69\x6D\x61\x74\x65","\x33\x31\x30\x70\x78","\x39\x35\x70\x78","\x73\x74\x6F\x70","\x2E\x6B\x65\x79\x62\x6F\x61\x72\x64","\x77\x68\x69\x63\x68","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74","\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65","\x74\x65\x78\x74","\x2E\x61\x63\x74\x69\x6F\x6E","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x76\x61\x6C","\x6C\x6F\x61\x64","\x63\x68\x61\x6E\x67\x65","\x74\x72\x69\x67\x67\x65\x72","\x73\x68\x6F\x77","\x2E\x66\x69\x6C\x74\x65\x72","\x2E\x73\x63\x6F\x72\x65","\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x6E\x65\x67\x22\x3E\x3C\x73\x70\x61\x6E\x3E","\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x2F\x6C\x69\x3E","\x62\x65\x66\x6F\x72\x65","\x2E\x73\x63\x6F\x72\x65\x61\x64\x64\x20\x6C\x69\x3A\x66\x69\x72\x73\x74\x2D\x6F\x66\x2D\x74\x79\x70\x65","\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x70\x6F\x73\x22\x3E\x3C\x73\x70\x61\x6E\x3E\x2B","\x31\x30\x30\x25","\x73\x6C\x6F\x77","\x72\x65\x6D\x6F\x76\x65","\x38\x70\x78","\x2D\x31\x38\x70\x78","\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74","\x6D\x61\x78","\x6D\x69\x6E","\x63","\x64","\x74","\x6C\x65\x6E\x67\x74\x68","\x74\x6F\x75\x63\x68\x65\x73","\x6F\x72\x69\x67\x69\x6E\x61\x6C\x45\x76\x65\x6E\x74","\x6F","\x24","\x69","\x67","\x76","\x63\x76","\x78","\x79","\x77","\x68","\x24\x63","\x69\x73\x49\x6E\x69\x74","\x66\x67\x43\x6F\x6C\x6F\x72","\x70\x43\x6F\x6C\x6F\x72","\x64\x48","\x63\x48","\x65\x48","\x72\x48","\x73\x63\x61\x6C\x65","\x72\x65\x6C\x61\x74\x69\x76\x65","\x72\x65\x6C\x61\x74\x69\x76\x65\x57\x69\x64\x74\x68","\x72\x65\x6C\x61\x74\x69\x76\x65\x48\x65\x69\x67\x68\x74","\x24\x64\x69\x76","\x72\x75\x6E","\x69\x6E\x69\x74","\x6B\x6F\x6E\x74\x72\x6F\x6C\x65\x64","\x64\x61\x74\x61","\x65\x78\x74\x65\x6E\x64","\x72\x65\x61\x64\x6F\x6E\x6C\x79","\x61\x74\x74\x72","\x63\x75\x72\x73\x6F\x72","\x74\x68\x69\x63\x6B\x6E\x65\x73\x73","\x6C\x69\x6E\x65\x63\x61\x70","\x62\x75\x74\x74","\x77\x69\x64\x74\x68","\x68\x65\x69\x67\x68\x74","\x64\x69\x73\x70\x6C\x61\x79\x69\x6E\x70\x75\x74","\x64\x69\x73\x70\x6C\x61\x79\x70\x72\x65\x76\x69\x6F\x75\x73","\x66\x67\x63\x6F\x6C\x6F\x72","\x23\x38\x37\x43\x45\x45\x42","\x69\x6E\x70\x75\x74\x63\x6F\x6C\x6F\x72","\x66\x6F\x6E\x74","\x41\x72\x69\x61\x6C","\x66\x6F\x6E\x74\x2D\x77\x65\x69\x67\x68\x74","\x62\x6F\x6C\x64","\x73\x74\x65\x70","\x69\x6E\x70\x75\x74\x43\x6F\x6C\x6F\x72","\x66\x69\x65\x6C\x64\x73\x65\x74","\x69\x73","\x69\x6E\x70\x75\x74","\x66\x69\x6E\x64","\x63\x68\x61\x6E\x67\x65\x20\x6B\x65\x79\x75\x70","\x62\x69\x6E\x64","\x65\x61\x63\x68","\x6C\x65\x67\x65\x6E\x64","","\x64\x69\x73\x70\x6C\x61\x79\x49\x6E\x70\x75\x74","\x63\x61\x6E\x76\x61\x73","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x69\x6E\x69\x74\x45\x6C\x65\x6D\x65\x6E\x74","\x67\x65\x74\x43\x6F\x6E\x74\x65\x78\x74","\x32\x64","\x65\x72\x72\x6F\x72","\x64\x65\x76\x69\x63\x65\x50\x69\x78\x65\x6C\x52\x61\x74\x69\x6F","\x77\x65\x62\x6B\x69\x74\x42\x61\x63\x6B\x69\x6E\x67\x53\x74\x6F\x72\x65\x50\x69\x78\x65\x6C\x52\x61\x74\x69\x6F","\x6D\x6F\x7A\x42\x61\x63\x6B\x69\x6E\x67\x53\x74\x6F\x72\x65\x50\x69\x78\x65\x6C\x52\x61\x74\x69\x6F","\x6D\x73\x42\x61\x63\x6B\x69\x6E\x67\x53\x74\x6F\x72\x65\x50\x69\x78\x65\x6C\x52\x61\x74\x69\x6F","\x6F\x42\x61\x63\x6B\x69\x6E\x67\x53\x74\x6F\x72\x65\x50\x69\x78\x65\x6C\x52\x61\x74\x69\x6F","\x62\x61\x63\x6B\x69\x6E\x67\x53\x74\x6F\x72\x65\x50\x69\x78\x65\x6C\x52\x61\x74\x69\x6F","\x25","\x69\x6E\x64\x65\x78\x4F\x66","\x3C\x64\x69\x76\x20\x73\x74\x79\x6C\x65\x3D\x22","\x69\x6E\x6C\x69\x6E\x65","\x64\x69\x73\x70\x6C\x61\x79\x3A\x69\x6E\x6C\x69\x6E\x65\x3B","\x22\x3E\x3C\x2F\x64\x69\x76\x3E","\x77\x72\x61\x70","\x70\x61\x72\x65\x6E\x74","\x63\x6F\x70\x79","\x63\x6F\x6E\x66\x69\x67\x75\x72\x65","\x5F\x63\x61\x72\x76\x65","\x70\x78","\x63\x73\x73","\x5F\x64\x72\x61\x77","\x63\x6C\x65\x61\x72","\x64\x72\x61\x77","\x5F\x74\x6F\x75\x63\x68","\x70\x61\x67\x65\x58","\x70\x61\x67\x65\x59","\x78\x79\x32\x76\x61\x6C","\x74\x6F\x75\x63\x68\x65\x6E\x64\x2E\x6B","\x74\x6F\x75\x63\x68\x6D\x6F\x76\x65\x2E\x6B\x20\x74\x6F\x75\x63\x68\x65\x6E\x64\x2E\x6B","\x75\x6E\x62\x69\x6E\x64","\x74\x6F\x75\x63\x68\x6D\x6F\x76\x65\x2E\x6B","\x5F\x6D\x6F\x75\x73\x65","\x6D\x6F\x75\x73\x65\x75\x70\x2E\x6B","\x6D\x6F\x75\x73\x65\x6D\x6F\x76\x65\x2E\x6B\x20\x6D\x6F\x75\x73\x65\x75\x70\x2E\x6B\x20\x6B\x65\x79\x75\x70\x2E\x6B","\x6B\x65\x79\x75\x70\x2E\x6B","\x6B\x65\x79\x43\x6F\x64\x65","\x6D\x6F\x75\x73\x65\x75\x70\x2E\x6B\x20\x6D\x6F\x75\x73\x65\x6D\x6F\x76\x65\x2E\x6B\x20\x6B\x65\x79\x75\x70\x2E\x6B","\x63\x61\x6E\x63\x65\x6C","\x6D\x6F\x75\x73\x65\x6D\x6F\x76\x65\x2E\x6B","\x5F\x78\x79","\x6F\x66\x66\x73\x65\x74","\x6C\x65\x66\x74","\x74\x6F\x70","\x5F\x6C\x69\x73\x74\x65\x6E","\x72\x65\x61\x64\x4F\x6E\x6C\x79","\x74\x6F\x75\x63\x68\x73\x74\x61\x72\x74","\x6D\x6F\x75\x73\x65\x64\x6F\x77\x6E","\x6C\x69\x73\x74\x65\x6E","\x72\x65\x73\x69\x7A\x65","\x5F\x63\x6F\x6E\x66\x69\x67\x75\x72\x65","\x72\x65\x6C\x65\x61\x73\x65","\x64\x69\x73\x70\x6C\x61\x79\x50\x72\x65\x76\x69\x6F\x75\x73","\x30\x2E\x34","\x68\x32\x72\x67\x62\x61","\x30\x2E\x36","\x5F\x63\x6C\x65\x61\x72","\x5F\x76\x61\x6C\x69\x64\x61\x74\x65","\x73\x75\x62\x73\x74\x72\x69\x6E\x67","\x72\x67\x62\x61\x28","\x2C","\x29","\x44\x69\x61\x6C","\x63\x61\x6C\x6C","\x73\x74\x61\x72\x74\x41\x6E\x67\x6C\x65","\x78\x79","\x72\x61\x64\x69\x75\x73","\x6C\x69\x6E\x65\x57\x69\x64\x74\x68","\x63\x75\x72\x73\x6F\x72\x45\x78\x74","\x77\x32","\x50\x49\x32","\x50\x49","\x62\x67\x63\x6F\x6C\x6F\x72","\x23\x45\x45\x45\x45\x45\x45","\x61\x6E\x67\x6C\x65\x6F\x66\x66\x73\x65\x74","\x61\x6E\x67\x6C\x65\x61\x72\x63","\x73\x74\x6F\x70\x70\x65\x72","\x61\x74\x61\x6E\x32","\x61\x6E\x67\x6C\x65\x4F\x66\x66\x73\x65\x74","\x61\x6E\x67\x6C\x65\x41\x72\x63","\x64\x65\x74\x61\x69\x6C","\x77\x68\x65\x65\x6C\x44\x65\x6C\x74\x61\x58","\x77\x68\x65\x65\x6C\x44\x65\x6C\x74\x61\x59","\x6B\x65\x79\x75\x70","\x63\x6C\x65\x61\x72\x54\x69\x6D\x65\x6F\x75\x74","\x6B\x65\x79\x64\x6F\x77\x6E","\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65","\x69\x6E\x41\x72\x72\x61\x79","\x73\x65\x74\x54\x69\x6D\x65\x6F\x75\x74","\x6D\x6F\x75\x73\x65\x77\x68\x65\x65\x6C\x20\x44\x4F\x4D\x4D\x6F\x75\x73\x65\x53\x63\x72\x6F\x6C\x6C","\x6C\x69\x6E\x65\x43\x61\x70","\x65\x6E\x64\x41\x6E\x67\x6C\x65","\x61\x62\x73","\x61\x62\x73\x6F\x6C\x75\x74\x65","\x6D\x69\x64\x64\x6C\x65","\x2D","\x6E\x6F\x6E\x65","\x66\x6F\x6E\x74\x57\x65\x69\x67\x68\x74","\x20","\x70\x78\x20","\x63\x65\x6E\x74\x65\x72","\x30\x70\x78","\x68\x69\x64\x64\x65\x6E","\x61\x6E\x67\x6C\x65","\x62\x65\x67\x69\x6E\x50\x61\x74\x68","\x73\x74\x72\x6F\x6B\x65\x53\x74\x79\x6C\x65","\x62\x67\x43\x6F\x6C\x6F\x72","\x61\x72\x63","\x73\x74\x72\x6F\x6B\x65","\x64\x69\x61\x6C","\x66\x6E","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72"];var timer=20;var Ohtimer=30;var htimer=30;var m=0;var chars=_0x2bf4[0];$(function (){$(_0x2bf4[2])[_0x2bf4[1]]();} );$(function (){$(_0x2bf4[3])[_0x2bf4[1]]();} );$(window)[_0x2bf4[25]](function (){$(_0x2bf4[5])[_0x2bf4[4]]();$(_0x2bf4[7])[_0x2bf4[6]](1090);$(document)[_0x2bf4[9]](_0x2bf4[8],function (){setTimeout(timerf,200);setTimeout(timerh,200);} );$(document)[_0x2bf4[8]](function (_0xfec4x6){if(timer!==0){htimer=Ohtimer;$(_0x2bf4[17])[_0x2bf4[16]]()[_0x2bf4[13]]({"\x77\x69\x64\x74\x68":_0x2bf4[14],"\x6D\x61\x72\x67\x69\x6E\x2D\x6C\x65\x66\x74":_0x2bf4[15]},10)[_0x2bf4[13]]({"\x77\x69\x64\x74\x68":_0x2bf4[10],"\x6D\x61\x72\x67\x69\x6E\x2D\x6C\x65\x66\x74":_0x2bf4[11]},_0x2bf4[12]);if(_0xfec4x6[_0x2bf4[18]]===$(_0x2bf4[22])[_0x2bf4[21]]()[_0x2bf4[20]]()[_0x2bf4[19]](0)){_0xfec4x6[_0x2bf4[23]]();addToScore(parseInt($(_0x2bf4[3])[_0x2bf4[24]]())*4);} else {if(m>-999){addToScore(-25);} ;} ;getNewAction();} ;} );} );function timerf(){if(timer>0){timer--;$(_0x2bf4[2])[_0x2bf4[24]](timer)[_0x2bf4[27]](_0x2bf4[26]);tid=setTimeout(timerf,1000);} else {$(_0x2bf4[29])[_0x2bf4[28]]();saveScore();} ;} ;function timerh(){if(htimer>0){htimer--;} ;$(_0x2bf4[3])[_0x2bf4[24]](htimer)[_0x2bf4[27]](_0x2bf4[26]);tid=setTimeout(timerh,30);} ;function addToScore(_0xfec4xa){m+=_0xfec4xa;$(_0x2bf4[30])[_0x2bf4[21]](m);if(_0xfec4xa<0){$(_0x2bf4[34])[_0x2bf4[33]](_0x2bf4[31]+_0xfec4xa+_0x2bf4[32]);} else {$(_0x2bf4[34])[_0x2bf4[33]](_0x2bf4[35]+_0xfec4xa+_0x2bf4[32]);} ;$(_0x2bf4[34])[_0x2bf4[13]]({"\x70\x61\x64\x64\x69\x6E\x67":_0x2bf4[39],"\x74\x6F\x70":_0x2bf4[40]},100)[_0x2bf4[13]]({"\x6C\x65\x66\x74":_0x2bf4[36],"\x6F\x70\x61\x63\x69\x74\x79":0.1},_0x2bf4[37],function (){$(this)[_0x2bf4[38]]();} );} ;function getNewAction(){var _0xfec4x34=Math[_0x2bf4[224]]((Math[_0x2bf4[223]]()*25));$(_0x2bf4[22])[_0x2bf4[21]](chars[_0xfec4x34]);htimer=Ohtimer;} (function (_0xfec4xb){_0x2bf4[41];var _0xfec4xc={},_0xfec4xd=Math[_0x2bf4[42]],_0xfec4xe=Math[_0x2bf4[43]];_0xfec4xc[_0x2bf4[44]]={};_0xfec4xc[_0x2bf4[44]][_0x2bf4[45]]=_0xfec4xb(document);_0xfec4xc[_0x2bf4[44]][_0x2bf4[46]]=function (_0xfec4xf){return _0xfec4xf[_0x2bf4[49]][_0x2bf4[48]][_0x2bf4[47]]-1;} ;_0xfec4xc[_0x2bf4[50]]=function (){var _0xfec4x10=this;this[_0x2bf4[50]]=null;this[_0x2bf4[51]]=null;this[_0x2bf4[52]]=null;this[_0x2bf4[53]]=null;this[_0x2bf4[54]]=null;this[_0x2bf4[55]]=null;this[_0x2bf4[56]]=0;this[_0x2bf4[57]]=0;this[_0x2bf4[58]]=0;this[_0x2bf4[59]]=0;this[_0x2bf4[60]]=null;this[_0x2bf4[44]]=null;this[_0x2bf4[46]]=0;this[_0x2bf4[61]]=false;this[_0x2bf4[62]]=null;this[_0x2bf4[63]]=null;this[_0x2bf4[64]]=null;this[_0x2bf4[65]]=null;this[_0x2bf4[66]]=null;this[_0x2bf4[67]]=null;this[_0x2bf4[68]]=1;this[_0x2bf4[69]]=false;this[_0x2bf4[70]]=false;this[_0x2bf4[71]]=false;this[_0x2bf4[72]]=null;this[_0x2bf4[73]]=function (){var _0xfec4x11=function (_0xfec4xf,_0xfec4x12){var _0xfec4xc;for(_0xfec4xc in _0xfec4x12){_0xfec4x10[_0x2bf4[50]][_0xfec4xc]=_0xfec4x12[_0xfec4xc];} ;_0xfec4x10[_0x2bf4[74]]();_0xfec4x10._configure()._draw();} ;if(this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[75])){return ;} ;this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[75],true);this[_0x2bf4[77]]();this[_0x2bf4[50]]=_0xfec4xb[_0x2bf4[77]]({min:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[43])||0,max:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[42])||100,stopper:true,readOnly:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[78])||(this[_0x2bf4[51]][_0x2bf4[79]](_0x2bf4[78])==_0x2bf4[78]),cursor:(this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[80])===true&&30)||this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[80])||0,thickness:(this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[81])&&Math[_0x2bf4[42]](Math[_0x2bf4[43]](this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[81]),1),0.01))||0.35,lineCap:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[82])||_0x2bf4[83],width:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[84])||200,height:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[85])||200,displayInput:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[86])==null||this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[86]),displayPrevious:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[87]),fgColor:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[88])||_0x2bf4[89],inputColor:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[90]),font:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[91])||_0x2bf4[92],fontWeight:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[93])||_0x2bf4[94],inline:false,step:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[95])||1,draw:null,change:null,cancel:null,release:null,error:null},this[_0x2bf4[50]]);if(!this[_0x2bf4[50]][_0x2bf4[96]]){this[_0x2bf4[50]][_0x2bf4[96]]=this[_0x2bf4[50]][_0x2bf4[62]];} ;if(this[_0x2bf4[51]][_0x2bf4[98]](_0x2bf4[97])){this[_0x2bf4[54]]={};this[_0x2bf4[52]]=this[_0x2bf4[51]][_0x2bf4[100]](_0x2bf4[99]);this[_0x2bf4[52]][_0x2bf4[103]](function (_0xfec4xc){var _0xfec4x13=_0xfec4xb(this);_0xfec4x10[_0x2bf4[52]][_0xfec4xc]=_0xfec4x13;_0xfec4x10[_0x2bf4[54]][_0xfec4xc]=_0xfec4x13[_0x2bf4[24]]();_0xfec4x13[_0x2bf4[102]](_0x2bf4[101],function (){var _0xfec4x14={};_0xfec4x14[_0xfec4xc]=_0xfec4x13[_0x2bf4[24]]();_0xfec4x10[_0x2bf4[24]](_0xfec4x14);} );} );this[_0x2bf4[51]][_0x2bf4[100]](_0x2bf4[104])[_0x2bf4[38]]();} else {this[_0x2bf4[52]]=this[_0x2bf4[51]];this[_0x2bf4[54]]=this[_0x2bf4[51]][_0x2bf4[24]]();(this[_0x2bf4[54]]==_0x2bf4[105])&&(this[_0x2bf4[54]]=this[_0x2bf4[50]][_0x2bf4[43]]);this[_0x2bf4[51]][_0x2bf4[102]](_0x2bf4[101],function (){_0xfec4x10[_0x2bf4[24]](_0xfec4x10._validate(_0xfec4x10[_0x2bf4[51]][_0x2bf4[24]]()));} );} ;(!this[_0x2bf4[50]][_0x2bf4[106]])&&this[_0x2bf4[51]][_0x2bf4[4]]();this[_0x2bf4[60]]=_0xfec4xb(document[_0x2bf4[108]](_0x2bf4[107]));if( typeof G_vmlCanvasManager!==_0x2bf4[109]){G_vmlCanvasManager[_0x2bf4[110]](this[_0x2bf4[60]][0]);} ;this[_0x2bf4[44]]=this[_0x2bf4[60]][0][_0x2bf4[111]]?this[_0x2bf4[60]][0][_0x2bf4[111]](_0x2bf4[112]):null;if(!this[_0x2bf4[44]]){this[_0x2bf4[50]][_0x2bf4[113]]&&this[_0x2bf4[50]][_0x2bf4[113]]();return ;} ;this[_0x2bf4[68]]=(window[_0x2bf4[114]]||1)/(this[_0x2bf4[44]][_0x2bf4[115]]||this[_0x2bf4[44]][_0x2bf4[116]]||this[_0x2bf4[44]][_0x2bf4[117]]||this[_0x2bf4[44]][_0x2bf4[118]]||this[_0x2bf4[44]][_0x2bf4[119]]||1);this[_0x2bf4[70]]=((this[_0x2bf4[50]][_0x2bf4[84]]%1!==0)&&this[_0x2bf4[50]][_0x2bf4[84]][_0x2bf4[121]](_0x2bf4[120]));this[_0x2bf4[71]]=((this[_0x2bf4[50]][_0x2bf4[85]]%1!==0)&&this[_0x2bf4[50]][_0x2bf4[85]][_0x2bf4[121]](_0x2bf4[120]));this[_0x2bf4[69]]=(this[_0x2bf4[70]]||this[_0x2bf4[71]]);this[_0x2bf4[72]]=_0xfec4xb(_0x2bf4[122]+(this[_0x2bf4[50]][_0x2bf4[123]]?_0x2bf4[124]:_0x2bf4[105])+_0x2bf4[125]);this[_0x2bf4[51]][_0x2bf4[126]](this.$div)[_0x2bf4[33]](this.$c);this[_0x2bf4[72]]=this[_0x2bf4[51]][_0x2bf4[127]]();this._carve();if(this[_0x2bf4[54]] instanceof Object){this[_0x2bf4[55]]={};this[_0x2bf4[128]](this[_0x2bf4[54]],this[_0x2bf4[55]]);} else {this[_0x2bf4[55]]=this[_0x2bf4[54]];} ;this[_0x2bf4[51]][_0x2bf4[102]](_0x2bf4[129],_0xfec4x11)[_0x2bf4[127]]()[_0x2bf4[102]](_0x2bf4[129],_0xfec4x11);this._listen()._configure()._xy()[_0x2bf4[74]]();this[_0x2bf4[61]]=true;this._draw();return this;} ;this[_0x2bf4[130]]=function (){if(this[_0x2bf4[69]]){var _0xfec4x15=this[_0x2bf4[70]]?this[_0x2bf4[72]][_0x2bf4[127]]()[_0x2bf4[84]]()*parseInt(this[_0x2bf4[50]][_0x2bf4[84]])/100:this[_0x2bf4[72]][_0x2bf4[127]]()[_0x2bf4[84]](),_0xfec4x16=this[_0x2bf4[71]]?this[_0x2bf4[72]][_0x2bf4[127]]()[_0x2bf4[85]]()*parseInt(this[_0x2bf4[50]][_0x2bf4[85]])/100:this[_0x2bf4[72]][_0x2bf4[127]]()[_0x2bf4[85]]();this[_0x2bf4[58]]=this[_0x2bf4[59]]=Math[_0x2bf4[43]](_0xfec4x15,_0xfec4x16);} else {this[_0x2bf4[58]]=this[_0x2bf4[50]][_0x2bf4[84]];this[_0x2bf4[59]]=this[_0x2bf4[50]][_0x2bf4[85]];} ;this[_0x2bf4[72]][_0x2bf4[132]]({"\x77\x69\x64\x74\x68":this[_0x2bf4[58]]+_0x2bf4[131],"\x68\x65\x69\x67\x68\x74":this[_0x2bf4[59]]+_0x2bf4[131]});this[_0x2bf4[60]][_0x2bf4[79]]({width:this[_0x2bf4[58]],height:this[_0x2bf4[59]]});if(this[_0x2bf4[68]]!==1){this[_0x2bf4[60]][0][_0x2bf4[84]]=this[_0x2bf4[60]][0][_0x2bf4[84]]*this[_0x2bf4[68]];this[_0x2bf4[60]][0][_0x2bf4[85]]=this[_0x2bf4[60]][0][_0x2bf4[85]]*this[_0x2bf4[68]];this[_0x2bf4[60]][_0x2bf4[84]](this[_0x2bf4[58]]);this[_0x2bf4[60]][_0x2bf4[85]](this[_0x2bf4[59]]);} ;return this;} ;this[_0x2bf4[133]]=function (){var _0xfec4x17=true;_0xfec4x10[_0x2bf4[53]]=_0xfec4x10[_0x2bf4[44]];_0xfec4x10[_0x2bf4[134]]();_0xfec4x10[_0x2bf4[64]]&&(_0xfec4x17=_0xfec4x10[_0x2bf4[64]]());(_0xfec4x17!==false)&&_0xfec4x10[_0x2bf4[135]]();} ;this[_0x2bf4[136]]=function (_0xfec4xf){var _0xfec4x18=function (_0xfec4xf){var _0xfec4x19=_0xfec4x10[_0x2bf4[139]](_0xfec4xf[_0x2bf4[49]][_0x2bf4[48]][_0xfec4x10[_0x2bf4[46]]][_0x2bf4[137]],_0xfec4xf[_0x2bf4[49]][_0x2bf4[48]][_0xfec4x10[_0x2bf4[46]]][_0x2bf4[138]]);_0xfec4x10[_0x2bf4[26]](_0xfec4x10._validate(_0xfec4x19));_0xfec4x10._draw();} ;this[_0x2bf4[46]]=_0xfec4xc[_0x2bf4[44]][_0x2bf4[46]](_0xfec4xf);_0xfec4x18(_0xfec4xf);_0xfec4xc[_0x2bf4[44]][_0x2bf4[45]][_0x2bf4[102]](_0x2bf4[143],_0xfec4x18)[_0x2bf4[102]](_0x2bf4[140],function (){_0xfec4xc[_0x2bf4[44]][_0x2bf4[45]][_0x2bf4[142]](_0x2bf4[141]);if(_0xfec4x10[_0x2bf4[67]]&&(_0xfec4x10[_0x2bf4[67]](_0xfec4x10[_0x2bf4[55]])===false)){return ;} ;_0xfec4x10[_0x2bf4[24]](_0xfec4x10[_0x2bf4[55]]);} );return this;} ;this[_0x2bf4[144]]=function (_0xfec4xf){var _0xfec4x1a=function (_0xfec4xf){var _0xfec4x19=_0xfec4x10[_0x2bf4[139]](_0xfec4xf[_0x2bf4[137]],_0xfec4xf[_0x2bf4[138]]);_0xfec4x10[_0x2bf4[26]](_0xfec4x10._validate(_0xfec4x19));_0xfec4x10._draw();} ;_0xfec4x1a(_0xfec4xf);_0xfec4xc[_0x2bf4[44]][_0x2bf4[45]][_0x2bf4[102]](_0x2bf4[151],_0xfec4x1a)[_0x2bf4[102]](_0x2bf4[147],function (_0xfec4xf){if(_0xfec4xf[_0x2bf4[148]]===27){_0xfec4xc[_0x2bf4[44]][_0x2bf4[45]][_0x2bf4[142]](_0x2bf4[149]);if(_0xfec4x10[_0x2bf4[66]]&&(_0xfec4x10[_0x2bf4[66]]()===false)){return ;} ;_0xfec4x10[_0x2bf4[150]]();} ;} )[_0x2bf4[102]](_0x2bf4[145],function (_0xfec4xf){_0xfec4xc[_0x2bf4[44]][_0x2bf4[45]][_0x2bf4[142]](_0x2bf4[146]);if(_0xfec4x10[_0x2bf4[67]]&&(_0xfec4x10[_0x2bf4[67]](_0xfec4x10[_0x2bf4[55]])===false)){return ;} ;_0xfec4x10[_0x2bf4[24]](_0xfec4x10[_0x2bf4[55]]);} );return this;} ;this[_0x2bf4[152]]=function (){var _0xfec4x1b=this[_0x2bf4[60]][_0x2bf4[153]]();this[_0x2bf4[56]]=_0xfec4x1b[_0x2bf4[154]];this[_0x2bf4[57]]=_0xfec4x1b[_0x2bf4[155]];return this;} ;this[_0x2bf4[156]]=function (){if(!this[_0x2bf4[50]][_0x2bf4[157]]){this[_0x2bf4[60]][_0x2bf4[102]](_0x2bf4[159],function (_0xfec4xf){_0xfec4xf[_0x2bf4[23]]();_0xfec4x10._xy()._mouse(_0xfec4xf);} )[_0x2bf4[102]](_0x2bf4[158],function (_0xfec4xf){_0xfec4xf[_0x2bf4[23]]();_0xfec4x10._xy()._touch(_0xfec4xf);} );this[_0x2bf4[160]]();} else {this[_0x2bf4[51]][_0x2bf4[79]](_0x2bf4[78],_0x2bf4[78]);} ;if(this[_0x2bf4[69]]){_0xfec4xb(window)[_0x2bf4[161]](function (){_0xfec4x10._carve()[_0x2bf4[74]]();_0xfec4x10._draw();} );} ;return this;} ;this[_0x2bf4[162]]=function (){if(this[_0x2bf4[50]][_0x2bf4[135]]){this[_0x2bf4[64]]=this[_0x2bf4[50]][_0x2bf4[135]];} ;if(this[_0x2bf4[50]][_0x2bf4[26]]){this[_0x2bf4[65]]=this[_0x2bf4[50]][_0x2bf4[26]];} ;if(this[_0x2bf4[50]][_0x2bf4[150]]){this[_0x2bf4[66]]=this[_0x2bf4[50]][_0x2bf4[150]];} ;if(this[_0x2bf4[50]][_0x2bf4[163]]){this[_0x2bf4[67]]=this[_0x2bf4[50]][_0x2bf4[163]];} ;if(this[_0x2bf4[50]][_0x2bf4[164]]){this[_0x2bf4[63]]=this[_0x2bf4[166]](this[_0x2bf4[50]][_0x2bf4[62]],_0x2bf4[165]);this[_0x2bf4[62]]=this[_0x2bf4[166]](this[_0x2bf4[50]][_0x2bf4[62]],_0x2bf4[167]);} else {this[_0x2bf4[62]]=this[_0x2bf4[50]][_0x2bf4[62]];} ;return this;} ;this[_0x2bf4[168]]=function (){this[_0x2bf4[60]][0][_0x2bf4[84]]=this[_0x2bf4[60]][0][_0x2bf4[84]];} ;this[_0x2bf4[169]]=function (_0xfec4x19){return (~~(((_0xfec4x19<0)?-0.5:0.5)+(_0xfec4x19/this[_0x2bf4[50]][_0x2bf4[95]])))*this[_0x2bf4[50]][_0x2bf4[95]];} ;this[_0x2bf4[160]]=function (){} ;this[_0x2bf4[77]]=function (){} ;this[_0x2bf4[74]]=function (){} ;this[_0x2bf4[26]]=function (_0xfec4x19){} ;this[_0x2bf4[24]]=function (_0xfec4x19){} ;this[_0x2bf4[139]]=function (_0xfec4x1c,_0xfec4x1d){} ;this[_0x2bf4[135]]=function (){} ;this[_0x2bf4[134]]=function (){this._clear();} ;this[_0x2bf4[166]]=function (_0xfec4x16,_0xfec4x1e){var _0xfec4x1f;_0xfec4x16=_0xfec4x16[_0x2bf4[170]](1,7);_0xfec4x1f=[parseInt(_0xfec4x16[_0x2bf4[170]](0,2),16),parseInt(_0xfec4x16[_0x2bf4[170]](2,4),16),parseInt(_0xfec4x16[_0x2bf4[170]](4,6),16)];return _0x2bf4[171]+_0xfec4x1f[0]+_0x2bf4[172]+_0xfec4x1f[1]+_0x2bf4[172]+_0xfec4x1f[2]+_0x2bf4[172]+_0xfec4x1e+_0x2bf4[173];} ;this[_0x2bf4[128]]=function (_0xfec4x20,_0xfec4x21){for(var _0xfec4x22 in _0xfec4x20){_0xfec4x21[_0xfec4x22]=_0xfec4x20[_0xfec4x22];} ;} ;} ;_0xfec4xc[_0x2bf4[174]]=function (){_0xfec4xc[_0x2bf4[50]][_0x2bf4[175]](this);this[_0x2bf4[176]]=null;this[_0x2bf4[177]]=null;this[_0x2bf4[178]]=null;this[_0x2bf4[179]]=null;this[_0x2bf4[180]]=null;this[_0x2bf4[181]]=null;this[_0x2bf4[182]]=2*Math[_0x2bf4[183]];this[_0x2bf4[77]]=function (){this[_0x2bf4[50]]=_0xfec4xb[_0x2bf4[77]]({bgColor:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[184])||_0x2bf4[185],angleOffset:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[186])||0,angleArc:this[_0x2bf4[51]][_0x2bf4[76]](_0x2bf4[187])||360,inline:true},this[_0x2bf4[50]]);} ;this[_0x2bf4[24]]=function (_0xfec4x19){if(null!=_0xfec4x19){var _0xfec4x23=this[_0x2bf4[50]][_0x2bf4[188]]?_0xfec4xd(_0xfec4xe(_0xfec4x19,this[_0x2bf4[50]][_0x2bf4[42]]),this[_0x2bf4[50]][_0x2bf4[43]]):_0xfec4x19;if(_0xfec4x23!=this[_0x2bf4[55]]&&this[_0x2bf4[65]]&&(this[_0x2bf4[65]](this[_0x2bf4[55]])===false)){return ;} ;this[_0x2bf4[54]]=this[_0x2bf4[55]]=_0xfec4x23;this[_0x2bf4[51]][_0x2bf4[24]](this[_0x2bf4[54]]);this._draw();} else {return this[_0x2bf4[54]];} ;} ;this[_0x2bf4[139]]=function (_0xfec4x1c,_0xfec4x1d){var _0xfec4x1e,_0xfec4x24;_0xfec4x1e=Math[_0x2bf4[189]](_0xfec4x1c-(this[_0x2bf4[56]]+this[_0x2bf4[181]]),-(_0xfec4x1d-this[_0x2bf4[57]]-this[_0x2bf4[181]]))-this[_0x2bf4[190]];if(this[_0x2bf4[191]]!=this[_0x2bf4[182]]&&(_0xfec4x1e<0)&&(_0xfec4x1e>-0.5)){_0xfec4x1e=0;} else {if(_0xfec4x1e<0){_0xfec4x1e+=this[_0x2bf4[182]];} ;} ;_0xfec4x24=~~(0.5+(_0xfec4x1e*(this[_0x2bf4[50]][_0x2bf4[42]]-this[_0x2bf4[50]][_0x2bf4[43]])/this[_0x2bf4[191]]))+this[_0x2bf4[50]][_0x2bf4[43]];this[_0x2bf4[50]][_0x2bf4[188]]&&(_0xfec4x24=_0xfec4xd(_0xfec4xe(_0xfec4x24,this[_0x2bf4[50]][_0x2bf4[42]]),this[_0x2bf4[50]][_0x2bf4[43]]));return _0xfec4x24;} ;this[_0x2bf4[160]]=function (){var _0xfec4x10=this,_0xfec4x25=function (_0xfec4xf){_0xfec4xf[_0x2bf4[23]]();var _0xfec4x29=_0xfec4xf[_0x2bf4[49]],_0xfec4x2a=_0xfec4x29[_0x2bf4[192]]||_0xfec4x29[_0x2bf4[193]],_0xfec4x2b=_0xfec4x29[_0x2bf4[192]]||_0xfec4x29[_0x2bf4[194]],_0xfec4x19=parseInt(_0xfec4x10[_0x2bf4[51]][_0x2bf4[24]]())+(_0xfec4x2a>0||_0xfec4x2b>0?_0xfec4x10[_0x2bf4[50]][_0x2bf4[95]]:_0xfec4x2a<0||_0xfec4x2b<0?-_0xfec4x10[_0x2bf4[50]][_0x2bf4[95]]:0);_0xfec4x10[_0x2bf4[24]](_0xfec4x19);} ,_0xfec4x26,_0xfec4x27,m=1,_0xfec4x28={37:-_0xfec4x10[_0x2bf4[50]][_0x2bf4[95]],38:_0xfec4x10[_0x2bf4[50]][_0x2bf4[95]],39:_0xfec4x10[_0x2bf4[50]][_0x2bf4[95]],40:-_0xfec4x10[_0x2bf4[50]][_0x2bf4[95]]};this[_0x2bf4[51]][_0x2bf4[102]](_0x2bf4[197],function (_0xfec4xf){var _0xfec4x2c=_0xfec4xf[_0x2bf4[148]];if(_0xfec4x2c>=96&&_0xfec4x2c<=105){_0xfec4x2c=_0xfec4xf[_0x2bf4[148]]=_0xfec4x2c-48;} ;_0xfec4x26=parseInt(String[_0x2bf4[198]](_0xfec4x2c));if(isNaN(_0xfec4x26)){(_0xfec4x2c!==13)&&(_0xfec4x2c!==8)&&(_0xfec4x2c!==9)&&(_0xfec4x2c!==189)&&_0xfec4xf[_0x2bf4[23]]();if(_0xfec4xb[_0x2bf4[199]](_0xfec4x2c,[37,38,39,40])>-1){_0xfec4xf[_0x2bf4[23]]();var _0xfec4x19=parseInt(_0xfec4x10[_0x2bf4[51]][_0x2bf4[24]]())+_0xfec4x28[_0xfec4x2c]*m;_0xfec4x10[_0x2bf4[50]][_0x2bf4[188]]&&(_0xfec4x19=_0xfec4xd(_0xfec4xe(_0xfec4x19,_0xfec4x10[_0x2bf4[50]][_0x2bf4[42]]),_0xfec4x10[_0x2bf4[50]][_0x2bf4[43]]));_0xfec4x10[_0x2bf4[26]](_0xfec4x19);_0xfec4x10._draw();_0xfec4x27=window[_0x2bf4[200]](function (){m*=2;} ,30);} ;} ;} )[_0x2bf4[102]](_0x2bf4[195],function (_0xfec4xf){if(isNaN(_0xfec4x26)){if(_0xfec4x27){window[_0x2bf4[196]](_0xfec4x27);_0xfec4x27=null;m=1;_0xfec4x10[_0x2bf4[24]](_0xfec4x10[_0x2bf4[51]][_0x2bf4[24]]());} ;} else {(_0xfec4x10[_0x2bf4[51]][_0x2bf4[24]]()>_0xfec4x10[_0x2bf4[50]][_0x2bf4[42]]&&_0xfec4x10[_0x2bf4[51]][_0x2bf4[24]](_0xfec4x10[_0x2bf4[50]][_0x2bf4[42]]))||(_0xfec4x10[_0x2bf4[51]][_0x2bf4[24]]()<_0xfec4x10[_0x2bf4[50]][_0x2bf4[43]]&&_0xfec4x10[_0x2bf4[51]][_0x2bf4[24]](_0xfec4x10[_0x2bf4[50]][_0x2bf4[43]]));} ;} );this[_0x2bf4[60]][_0x2bf4[102]](_0x2bf4[201],_0xfec4x25);this[_0x2bf4[51]][_0x2bf4[102]](_0x2bf4[201],_0xfec4x25);} ;this[_0x2bf4[74]]=function (){if(this[_0x2bf4[54]]<this[_0x2bf4[50]][_0x2bf4[43]]||this[_0x2bf4[54]]>this[_0x2bf4[50]][_0x2bf4[42]]){this[_0x2bf4[54]]=this[_0x2bf4[50]][_0x2bf4[43]];} ;this[_0x2bf4[51]][_0x2bf4[24]](this[_0x2bf4[54]]);this[_0x2bf4[181]]=this[_0x2bf4[58]]/2;this[_0x2bf4[180]]=this[_0x2bf4[50]][_0x2bf4[80]]/100;this[_0x2bf4[177]]=this[_0x2bf4[181]]*this[_0x2bf4[68]];this[_0x2bf4[179]]=this[_0x2bf4[177]]*this[_0x2bf4[50]][_0x2bf4[81]];this[_0x2bf4[202]]=this[_0x2bf4[50]][_0x2bf4[202]];this[_0x2bf4[178]]=this[_0x2bf4[177]]-this[_0x2bf4[179]]/2;this[_0x2bf4[50]][_0x2bf4[190]]&&(this[_0x2bf4[50]][_0x2bf4[190]]=isNaN(this[_0x2bf4[50]][_0x2bf4[190]])?0:this[_0x2bf4[50]][_0x2bf4[190]]);this[_0x2bf4[50]][_0x2bf4[191]]&&(this[_0x2bf4[50]][_0x2bf4[191]]=isNaN(this[_0x2bf4[50]][_0x2bf4[191]])?this[_0x2bf4[182]]:this[_0x2bf4[50]][_0x2bf4[191]]);this[_0x2bf4[190]]=this[_0x2bf4[50]][_0x2bf4[190]]*Math[_0x2bf4[183]]/180;this[_0x2bf4[191]]=this[_0x2bf4[50]][_0x2bf4[191]]*Math[_0x2bf4[183]]/180;this[_0x2bf4[176]]=1.5*Math[_0x2bf4[183]]+this[_0x2bf4[190]];this[_0x2bf4[203]]=1.5*Math[_0x2bf4[183]]+this[_0x2bf4[190]]+this[_0x2bf4[191]];var _0xfec4x10=_0xfec4xd(String(Math[_0x2bf4[204]](this[_0x2bf4[50]][_0x2bf4[42]]))[_0x2bf4[47]],String(Math[_0x2bf4[204]](this[_0x2bf4[50]][_0x2bf4[43]]))[_0x2bf4[47]],2)+2;this[_0x2bf4[50]][_0x2bf4[106]]&&this[_0x2bf4[52]][_0x2bf4[132]]({"\x77\x69\x64\x74\x68":((this[_0x2bf4[58]]/2+4)>>0)+_0x2bf4[131],"\x68\x65\x69\x67\x68\x74":((this[_0x2bf4[58]]/3)>>0)+_0x2bf4[131],"\x70\x6F\x73\x69\x74\x69\x6F\x6E":_0x2bf4[205],"\x76\x65\x72\x74\x69\x63\x61\x6C\x2D\x61\x6C\x69\x67\x6E":_0x2bf4[206],"\x6D\x61\x72\x67\x69\x6E\x2D\x74\x6F\x70":((this[_0x2bf4[58]]/3)>>0)+_0x2bf4[131],"\x6D\x61\x72\x67\x69\x6E\x2D\x6C\x65\x66\x74":_0x2bf4[207]+((this[_0x2bf4[58]]*3/4+2)>>0)+_0x2bf4[131],"\x62\x6F\x72\x64\x65\x72":0,"\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64":_0x2bf4[208],"\x66\x6F\x6E\x74":this[_0x2bf4[50]][_0x2bf4[209]]+_0x2bf4[210]+((this[_0x2bf4[58]]/_0xfec4x10)>>0)+_0x2bf4[211]+this[_0x2bf4[50]][_0x2bf4[91]],"\x74\x65\x78\x74\x2D\x61\x6C\x69\x67\x6E":_0x2bf4[212],"\x63\x6F\x6C\x6F\x72":this[_0x2bf4[50]][_0x2bf4[96]]||this[_0x2bf4[50]][_0x2bf4[62]],"\x70\x61\x64\x64\x69\x6E\x67":_0x2bf4[213],"\x2D\x77\x65\x62\x6B\x69\x74\x2D\x61\x70\x70\x65\x61\x72\x61\x6E\x63\x65":_0x2bf4[208]})||this[_0x2bf4[52]][_0x2bf4[132]]({"\x77\x69\x64\x74\x68":_0x2bf4[213],"\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79":_0x2bf4[214]});} ;this[_0x2bf4[26]]=function (_0xfec4x19){if(_0xfec4x19==this[_0x2bf4[55]]){return ;} ;this[_0x2bf4[55]]=_0xfec4x19;if(this[_0x2bf4[65]]&&(this[_0x2bf4[65]](_0xfec4x19)===false)){return ;} ;} ;this[_0x2bf4[215]]=function (_0xfec4x19){return (_0xfec4x19-this[_0x2bf4[50]][_0x2bf4[43]])*this[_0x2bf4[191]]/(this[_0x2bf4[50]][_0x2bf4[42]]-this[_0x2bf4[50]][_0x2bf4[43]]);} ;this[_0x2bf4[135]]=function (){var _0xfec4x2d=this[_0x2bf4[53]],_0xfec4x1e=this[_0x2bf4[215]](this[_0x2bf4[55]]),_0xfec4x2e=this[_0x2bf4[176]],_0xfec4x2f=_0xfec4x2e+_0xfec4x1e,_0xfec4x30,_0xfec4x31,_0xfec4x32=1;_0xfec4x2d[_0x2bf4[179]]=this[_0x2bf4[179]];_0xfec4x2d[_0x2bf4[202]]=this[_0x2bf4[202]];this[_0x2bf4[50]][_0x2bf4[80]]&&(_0xfec4x2e=_0xfec4x2f-this[_0x2bf4[180]])&&(_0xfec4x2f=_0xfec4x2f+this[_0x2bf4[180]]);_0xfec4x2d[_0x2bf4[216]]();_0xfec4x2d[_0x2bf4[217]]=this[_0x2bf4[50]][_0x2bf4[218]];_0xfec4x2d[_0x2bf4[219]](this[_0x2bf4[177]],this[_0x2bf4[177]],this[_0x2bf4[178]],this[_0x2bf4[203]]-0.00001,this[_0x2bf4[176]]+0.00001,true);_0xfec4x2d[_0x2bf4[220]]();if(this[_0x2bf4[50]][_0x2bf4[164]]){_0xfec4x31=this[_0x2bf4[176]]+this[_0x2bf4[215]](this[_0x2bf4[54]]);_0xfec4x30=this[_0x2bf4[176]];this[_0x2bf4[50]][_0x2bf4[80]]&&(_0xfec4x30=_0xfec4x31-this[_0x2bf4[180]])&&(_0xfec4x31=_0xfec4x31+this[_0x2bf4[180]]);_0xfec4x2d[_0x2bf4[216]]();_0xfec4x2d[_0x2bf4[217]]=this[_0x2bf4[63]];_0xfec4x2d[_0x2bf4[219]](this[_0x2bf4[177]],this[_0x2bf4[177]],this[_0x2bf4[178]],_0xfec4x30-0.00001,_0xfec4x31+0.00001,false);_0xfec4x2d[_0x2bf4[220]]();_0xfec4x32=(this[_0x2bf4[55]]==this[_0x2bf4[54]]);} ;_0xfec4x2d[_0x2bf4[216]]();_0xfec4x2d[_0x2bf4[217]]=_0xfec4x32?this[_0x2bf4[50]][_0x2bf4[62]]:this[_0x2bf4[62]];_0xfec4x2d[_0x2bf4[219]](this[_0x2bf4[177]],this[_0x2bf4[177]],this[_0x2bf4[178]],_0xfec4x2e-0.00001,_0xfec4x2f+0.00001,false);_0xfec4x2d[_0x2bf4[220]]();} ;this[_0x2bf4[150]]=function (){this[_0x2bf4[24]](this[_0x2bf4[54]]);} ;} ;_0xfec4xb[_0x2bf4[222]][_0x2bf4[221]]=_0xfec4xb[_0x2bf4[222]][_0x2bf4[1]]=function (_0xfec4x1b){return this[_0x2bf4[103]](function (){var _0xfec4x17= new _0xfec4xc.Dial();_0xfec4x17[_0x2bf4[50]]=_0xfec4x1b;_0xfec4x17[_0x2bf4[51]]=_0xfec4xb(this);_0xfec4x17[_0x2bf4[73]]();} )[_0x2bf4[127]]();} ;} )(jQuery);
+var timer=20;
+var Ohtimer=30;
+var htimer=30;
+var m = 0;
+var chars = "abcdefghijklmnopqrstuvwxyz";
+
+$(function() {
+    $(".dial").knob();
+});
+$(function() {
+    $(".htimer").knob();
+});
+
+$(window).load(function() {
+    $(".loader").hide();
+    $("#container").fadeIn(1090);
+    
+    $(document).one("keypress", function () {
+        setTimeout(timerf, 200);
+         setTimeout(timerh, 200);
+    });
+   // $(".scoreadd li").css({"left":"100%"});
+    $(document).keypress(function(event) {
+        if(timer !== 0) {
+            
+            htimer = Ohtimer;
+            $(".keyboard").stop().animate({"width" : "310px", "margin-left" : "95px"}, 10)
+                    .animate({"width" : "300px", "margin-left" : "100px"}, "fast");
+            if (event.which === $(".action").text().toLowerCase().charCodeAt(0) ) {
+                event.preventDefault();
+                addToScore(parseInt($('.htimer').val())*4);
+             } else {
+                 if(m > -999) {
+                    addToScore(-25);
+                 }
+             }
+             getNewAction();
+        }
+        
+    });
+
+});
+
+function timerf() {
+  if(timer>0) {
+      timer--;
+      $('.dial')
+        .val(timer)
+        .trigger('change');
+      tid = setTimeout(timerf, 1000); // repeat myself
+  } else {
+      $(".filter").show();
+      saveScore();
+  }
+
+  
+
+    
+}
+
+function timerh() {
+  if(htimer>0) {
+      htimer--;
+  }
+  $('.htimer')
+    .val(htimer)
+    .trigger('change');
+    
+        tid = setTimeout(timerh, 30); // repeat myself
+    
+}
+
+function addToScore(value) {
+    m+=value;
+    $(".score").text(m);
+    if(value < 0) {
+        $(".scoreadd li:first-of-type").before('<li class="neg"><span>'+value+'</span></li>');
+    } else {
+        $(".scoreadd li:first-of-type").before('<li class="pos"><span>+'+value+'</span></li>');
+    }
+    $(".scoreadd li:first-of-type").animate({"padding": "8px", "top": "-18px"}, 100).animate({"left": "100%", "opacity": 0.1}, "slow", function() {$(this).remove();});
+}
+
+function getNewAction() {
+    var rand = Math.floor((Math.random()*25));
+    $(".action").text(chars[rand]);
+    htimer = Ohtimer;
+}
+
+
+/*!jQuery Knob*/
+/**
+ * Downward compatible, touchable dial
+ *
+ * Version: 1.2.0 (15/07/2012)
+ * Requires: jQuery v1.7+
+ *
+ * Copyright (c) 2012 Anthony Terrien
+ * Under MIT and GPL licenses:
+ *  http://www.opensource.org/licenses/mit-license.php
+ *  http://www.gnu.org/licenses/gpl.html
+ *
+ * Thanks to vor, eskimoblood, spiffistan, FabrizioC
+ */
+(function($) {
+
+    /**
+     * Kontrol library
+     */
+    "use strict";
+
+    /**
+     * Definition of globals and core
+     */
+    var k = {}, // kontrol
+        max = Math.max,
+        min = Math.min;
+
+    k.c = {};
+    k.c.d = $(document);
+    k.c.t = function (e) {
+        return e.originalEvent.touches.length - 1;
+    };
+
+    /**
+     * Kontrol Object
+     *
+     * Definition of an abstract UI control
+     *
+     * Each concrete component must call this one.
+     * <code>
+     * k.o.call(this);
+     * </code>
+     */
+    k.o = function () {
+        var s = this;
+
+        this.o = null; // array of options
+        this.$ = null; // jQuery wrapped element
+        this.i = null; // mixed HTMLInputElement or array of HTMLInputElement
+        this.g = null; // deprecated 2D graphics context for 'pre-rendering'
+        this.v = null; // value ; mixed array or integer
+        this.cv = null; // change value ; not commited value
+        this.x = 0; // canvas x position
+        this.y = 0; // canvas y position
+        this.w = 0; // canvas width
+        this.h = 0; // canvas height
+        this.$c = null; // jQuery canvas element
+        this.c = null; // rendered canvas context
+        this.t = 0; // touches index
+        this.isInit = false;
+        this.fgColor = null; // main color
+        this.pColor = null; // previous color
+        this.dH = null; // draw hook
+        this.cH = null; // change hook
+        this.eH = null; // cancel hook
+        this.rH = null; // release hook
+        this.scale = 1; // scale factor
+        this.relative = false;
+        this.relativeWidth = false;
+        this.relativeHeight = false;
+        this.$div = null; // component div
+
+        this.run = function () {
+            var cf = function (e, conf) {
+                var k;
+                for (k in conf) {
+                    s.o[k] = conf[k];
+                }
+                s.init();
+                s._configure()
+                 ._draw();
+            };
+
+            if(this.$.data('kontroled')) return;
+            this.$.data('kontroled', true);
+
+            this.extend();
+            this.o = $.extend(
+                {
+                    // Config
+                    min : this.$.data('min') || 0,
+                    max : this.$.data('max') || 100,
+                    stopper : true,
+                    readOnly : this.$.data('readonly') || (this.$.attr('readonly') == 'readonly'),
+
+                    // UI
+                    cursor : (this.$.data('cursor') === true && 30)
+                                || this.$.data('cursor')
+                                || 0,
+                    thickness : (
+                                this.$.data('thickness')
+                                && Math.max(Math.min(this.$.data('thickness'), 1), 0.01)
+                                )
+                                || 0.35,
+                    lineCap : this.$.data('linecap') || 'butt',
+                    width : this.$.data('width') || 200,
+                    height : this.$.data('height') || 200,
+                    displayInput : this.$.data('displayinput') == null || this.$.data('displayinput'),
+                    displayPrevious : this.$.data('displayprevious'),
+                    fgColor : this.$.data('fgcolor') || '#87CEEB',
+                    inputColor: this.$.data('inputcolor'),
+                    font: this.$.data('font') || 'Arial',
+                    fontWeight: this.$.data('font-weight') || 'bold',
+                    inline : false,
+                    step : this.$.data('step') || 1,
+
+                    // Hooks
+                    draw : null, // function () {}
+                    change : null, // function (value) {}
+                    cancel : null, // function () {}
+                    release : null, // function (value) {}
+                    error : null // function () {}
+                }, this.o
+            );
+
+            // finalize options
+            if(!this.o.inputColor) {
+                this.o.inputColor = this.o.fgColor;
+            }
+
+            // routing value
+            if(this.$.is('fieldset')) {
+
+                // fieldset = array of integer
+                this.v = {};
+                this.i = this.$.find('input')
+                this.i.each(function(k) {
+                    var $this = $(this);
+                    s.i[k] = $this;
+                    s.v[k] = $this.val();
+
+                    $this.bind(
+                        'change keyup'
+                        , function () {
+                            var val = {};
+                            val[k] = $this.val();
+                            s.val(val);
+                        }
+                    );
+                });
+                this.$.find('legend').remove();
+
+            } else {
+
+                // input = integer
+                this.i = this.$;
+                this.v = this.$.val();
+                (this.v == '') && (this.v = this.o.min);
+
+                this.$.bind(
+                    'change keyup'
+                    , function () {
+                        s.val(s._validate(s.$.val()));
+                    }
+                );
+
+            }
+
+            (!this.o.displayInput) && this.$.hide();
+
+            // adds needed DOM elements (canvas, div)
+            this.$c = $(document.createElement('canvas'));
+            if (typeof G_vmlCanvasManager !== 'undefined') {
+              G_vmlCanvasManager.initElement(this.$c[0]);
+            }
+            this.c = this.$c[0].getContext ? this.$c[0].getContext('2d') : null;
+            if (!this.c) {
+                this.o.error && this.o.error();
+                return;
+            }
+
+            // hdpi support
+            this.scale = (window.devicePixelRatio || 1) /
+                        (
+                            this.c.webkitBackingStorePixelRatio ||
+                            this.c.mozBackingStorePixelRatio ||
+                            this.c.msBackingStorePixelRatio ||
+                            this.c.oBackingStorePixelRatio ||
+                            this.c.backingStorePixelRatio || 1
+                        );
+
+            // detects relative width / height
+            this.relativeWidth = ((this.o.width % 1 !== 0)
+                                    && this.o.width.indexOf('%'));
+            this.relativeHeight = ((this.o.height % 1 !== 0)
+                                    && this.o.height.indexOf('%'));
+
+            this.relative = (this.relativeWidth || this.relativeHeight);
+
+            // wraps all elements in a div
+            this.$div = $('<div style="'
+                        + (this.o.inline ? 'display:inline;' : '')
+                        + '"></div>');
+
+            this.$.wrap(this.$div).before(this.$c);
+            this.$div = this.$.parent();
+
+            // computes size and carves the component
+            this._carve();
+
+            // prepares props for transaction
+            if (this.v instanceof Object) {
+                this.cv = {};
+                this.copy(this.v, this.cv);
+            } else {
+                this.cv = this.v;
+            }
+
+            // binds configure event
+            this.$
+                .bind("configure", cf)
+                .parent()
+                .bind("configure", cf);
+
+            // finalize init
+            this._listen()
+                ._configure()
+                ._xy()
+                .init();
+
+            this.isInit = true;
+
+            // the most important !
+            this._draw();
+
+            return this;
+        };
+
+        this._carve = function() {
+            if(this.relative) {
+                var w = this.relativeWidth
+                            ? this.$div.parent().width()
+                                * parseInt(this.o.width) / 100
+                            : this.$div.parent().width(),
+                    h = this.relativeHeight
+                            ? this.$div.parent().height()
+                                * parseInt(this.o.height) / 100
+                            : this.$div.parent().height();
+
+                // apply relative
+                this.w = this.h = Math.min(w, h);
+            } else {
+                this.w = this.o.width;
+                this.h = this.o.height;
+            }
+
+            // finalize div
+            this.$div.css({
+                'width': this.w + 'px',
+                'height': this.h + 'px'
+            });
+
+            // finalize canvas with computed width
+            this.$c.attr({
+                width: this.w,
+                height: this.h
+            });
+
+            // scaling
+            if (this.scale !== 1) {
+                this.$c[0].width = this.$c[0].width * this.scale;
+                this.$c[0].height = this.$c[0].height * this.scale;
+                this.$c.width(this.w);
+                this.$c.height(this.h);
+            }
+
+            return this;
+        }
+
+        this._draw = function () {
+
+            // canvas pre-rendering
+            var d = true;
+
+            s.g = s.c;
+
+            s.clear();
+
+            s.dH
+            && (d = s.dH());
+
+            (d !== false) && s.draw();
+
+        };
+
+        this._touch = function (e) {
+
+            var touchMove = function (e) {
+
+                var v = s.xy2val(
+                            e.originalEvent.touches[s.t].pageX,
+                            e.originalEvent.touches[s.t].pageY
+                            );
+                s.change(s._validate(v));
+                s._draw();
+            };
+
+            // get touches index
+            this.t = k.c.t(e);
+
+            // First touch
+            touchMove(e);
+
+            // Touch events listeners
+            k.c.d
+                .bind("touchmove.k", touchMove)
+                .bind(
+                    "touchend.k"
+                    , function () {
+                        k.c.d.unbind('touchmove.k touchend.k');
+
+                        if (
+                            s.rH
+                            && (s.rH(s.cv) === false)
+                        ) return;
+
+                        s.val(s.cv);
+                    }
+                );
+
+            return this;
+        };
+
+        this._mouse = function (e) {
+
+            var mouseMove = function (e) {
+                var v = s.xy2val(e.pageX, e.pageY);
+                s.change(s._validate(v));
+                s._draw();
+            };
+
+            // First click
+            mouseMove(e);
+
+            // Mouse events listeners
+            k.c.d
+                .bind("mousemove.k", mouseMove)
+                .bind(
+                    // Escape key cancel current change
+                    "keyup.k"
+                    , function (e) {
+                        if (e.keyCode === 27) {
+                            k.c.d.unbind("mouseup.k mousemove.k keyup.k");
+
+                            if (
+                                s.eH
+                                && (s.eH() === false)
+                            ) return;
+
+                            s.cancel();
+                        }
+                    }
+                )
+                .bind(
+                    "mouseup.k"
+                    , function (e) {
+                        k.c.d.unbind('mousemove.k mouseup.k keyup.k');
+
+                        if (
+                            s.rH
+                            && (s.rH(s.cv) === false)
+                        ) return;
+
+                        s.val(s.cv);
+                    }
+                );
+
+            return this;
+        };
+
+        this._xy = function () {
+            var o = this.$c.offset();
+            this.x = o.left;
+            this.y = o.top;
+            return this;
+        };
+
+        this._listen = function () {
+
+            if (!this.o.readOnly) {
+                this.$c
+                    .bind(
+                        "mousedown"
+                        , function (e) {
+                            e.preventDefault();
+                            s._xy()._mouse(e);
+                         }
+                    )
+                    .bind(
+                        "touchstart"
+                        , function (e) {
+                            e.preventDefault();
+                            s._xy()._touch(e);
+                         }
+                    );
+
+                this.listen();
+            } else {
+                this.$.attr('readonly', 'readonly');
+            }
+
+            if(this.relative) {
+                $(window).resize(function() {
+                    s._carve()
+                     .init();
+                    s._draw();
+                });
+            }
+
+            return this;
+        };
+
+        this._configure = function () {
+
+            // Hooks
+            if (this.o.draw) this.dH = this.o.draw;
+            if (this.o.change) this.cH = this.o.change;
+            if (this.o.cancel) this.eH = this.o.cancel;
+            if (this.o.release) this.rH = this.o.release;
+
+            if (this.o.displayPrevious) {
+                this.pColor = this.h2rgba(this.o.fgColor, "0.4");
+                this.fgColor = this.h2rgba(this.o.fgColor, "0.6");
+            } else {
+                this.fgColor = this.o.fgColor;
+            }
+
+            return this;
+        };
+
+        this._clear = function () {
+            this.$c[0].width = this.$c[0].width;
+        };
+
+        this._validate = function(v) {
+            return (~~ (((v < 0) ? -0.5 : 0.5) + (v/this.o.step))) * this.o.step;
+        };
+
+        // Abstract methods
+        this.listen = function () {}; // on start, one time
+        this.extend = function () {}; // each time configure triggered
+        this.init = function () {}; // each time configure triggered
+        this.change = function (v) {}; // on change
+        this.val = function (v) {}; // on release
+        this.xy2val = function (x, y) {}; //
+        this.draw = function () {}; // on change / on release
+        this.clear = function () { this._clear(); };
+
+        // Utils
+        this.h2rgba = function (h, a) {
+            var rgb;
+            h = h.substring(1,7)
+            rgb = [parseInt(h.substring(0,2),16)
+                   ,parseInt(h.substring(2,4),16)
+                   ,parseInt(h.substring(4,6),16)];
+            return "rgba(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + a + ")";
+        };
+
+        this.copy = function (f, t) {
+            for (var i in f) { t[i] = f[i]; }
+        };
+    };
+
+
+    /**
+     * k.Dial
+     */
+    k.Dial = function () {
+        k.o.call(this);
+
+        this.startAngle = null;
+        this.xy = null;
+        this.radius = null;
+        this.lineWidth = null;
+        this.cursorExt = null;
+        this.w2 = null;
+        this.PI2 = 2*Math.PI;
+
+        this.extend = function () {
+            this.o = $.extend(
+                {
+                    bgColor : this.$.data('bgcolor') || '#EEEEEE',
+                    angleOffset : this.$.data('angleoffset') || 0,
+                    angleArc : this.$.data('anglearc') || 360,
+                    inline : true
+                }, this.o
+            );
+        };
+
+        this.val = function (v) {
+            if (null != v) {
+                var newValue = this.o.stopper ? max(min(v, this.o.max), this.o.min) : v;
+                if (
+                    newValue != this.cv // avoid double callback for same value
+                    && this.cH
+                    && (this.cH(this.cv) === false)
+                ) return;
+                this.v = this.cv = newValue;
+                this.$.val(this.v);
+                this._draw();
+            } else {
+                return this.v;
+            }
+        };
+
+        this.xy2val = function (x, y) {
+            var a, ret;
+
+            a = Math.atan2(
+                        x - (this.x + this.w2)
+                        , - (y - this.y - this.w2)
+                    ) - this.angleOffset;
+
+            if(this.angleArc != this.PI2 && (a < 0) && (a > -0.5)) {
+                // if isset angleArc option, set to min if .5 under min
+                a = 0;
+            } else if (a < 0) {
+                a += this.PI2;
+            }
+
+            ret = ~~ (0.5 + (a * (this.o.max - this.o.min) / this.angleArc))
+                    + this.o.min;
+
+            this.o.stopper
+            && (ret = max(min(ret, this.o.max), this.o.min));
+
+            return ret;
+        };
+
+        this.listen = function () {
+            // bind MouseWheel
+            var s = this,
+                mw = function (e) {
+                            e.preventDefault();
+                            var ori = e.originalEvent
+                                ,deltaX = ori.detail || ori.wheelDeltaX
+                                ,deltaY = ori.detail || ori.wheelDeltaY
+                                ,v = parseInt(s.$.val()) + (deltaX>0 || deltaY>0 ? s.o.step : deltaX<0 || deltaY<0 ? -s.o.step : 0);
+                            s.val(v);
+                        }
+                , kval, to, m = 1, kv = {37:-s.o.step, 38:s.o.step, 39:s.o.step, 40:-s.o.step};
+
+            this.$
+                .bind(
+                    "keydown"
+                    ,function (e) {
+                        var kc = e.keyCode;
+
+                        // numpad support
+                        if(kc >= 96 && kc <= 105) {
+                            kc = e.keyCode = kc - 48;
+                        }
+
+                        kval = parseInt(String.fromCharCode(kc));
+
+                        if (isNaN(kval)) {
+
+                            (kc !== 13)         // enter
+                            && (kc !== 8)       // bs
+                            && (kc !== 9)       // tab
+                            && (kc !== 189)     // -
+                            && e.preventDefault();
+
+                            // arrows
+                            if ($.inArray(kc,[37,38,39,40]) > -1) {
+                                e.preventDefault();
+
+                                var v = parseInt(s.$.val()) + kv[kc] * m;
+
+                                s.o.stopper
+                                && (v = max(min(v, s.o.max), s.o.min));
+
+                                s.change(v);
+                                s._draw();
+
+                                // long time keydown speed-up
+                                to = window.setTimeout(
+                                    function () { m*=2; }
+                                    ,30
+                                );
+                            }
+                        }
+                    }
+                )
+                .bind(
+                    "keyup"
+                    ,function (e) {
+                        if (isNaN(kval)) {
+                            if (to) {
+                                window.clearTimeout(to);
+                                to = null;
+                                m = 1;
+                                s.val(s.$.val());
+                            }
+                        } else {
+                            // kval postcond
+                            (s.$.val() > s.o.max && s.$.val(s.o.max))
+                            || (s.$.val() < s.o.min && s.$.val(s.o.min));
+                        }
+
+                    }
+                );
+
+            this.$c.bind("mousewheel DOMMouseScroll", mw);
+            this.$.bind("mousewheel DOMMouseScroll", mw)
+        };
+
+        this.init = function () {
+
+            if (
+                this.v < this.o.min
+                || this.v > this.o.max
+            ) this.v = this.o.min;
+
+            this.$.val(this.v);
+            this.w2 = this.w / 2;
+            this.cursorExt = this.o.cursor / 100;
+            this.xy = this.w2 * this.scale;
+            this.lineWidth = this.xy * this.o.thickness;
+            this.lineCap = this.o.lineCap;
+            this.radius = this.xy - this.lineWidth / 2;
+
+            this.o.angleOffset
+            && (this.o.angleOffset = isNaN(this.o.angleOffset) ? 0 : this.o.angleOffset);
+
+            this.o.angleArc
+            && (this.o.angleArc = isNaN(this.o.angleArc) ? this.PI2 : this.o.angleArc);
+
+            // deg to rad
+            this.angleOffset = this.o.angleOffset * Math.PI / 180;
+            this.angleArc = this.o.angleArc * Math.PI / 180;
+
+            // compute start and end angles
+            this.startAngle = 1.5 * Math.PI + this.angleOffset;
+            this.endAngle = 1.5 * Math.PI + this.angleOffset + this.angleArc;
+
+            var s = max(
+                            String(Math.abs(this.o.max)).length
+                            , String(Math.abs(this.o.min)).length
+                            , 2
+                            ) + 2;
+
+            this.o.displayInput
+                && this.i.css({
+                        'width' : ((this.w / 2 + 4) >> 0) + 'px'
+                        ,'height' : ((this.w / 3) >> 0) + 'px'
+                        ,'position' : 'absolute'
+                        ,'vertical-align' : 'middle'
+                        ,'margin-top' : ((this.w / 3) >> 0) + 'px'
+                        ,'margin-left' : '-' + ((this.w * 3 / 4 + 2) >> 0) + 'px'
+                        ,'border' : 0
+                        ,'background' : 'none'
+                        ,'font' : this.o.fontWeight + ' ' + ((this.w / s) >> 0) + 'px ' + this.o.font
+                        ,'text-align' : 'center'
+                        ,'color' : this.o.inputColor || this.o.fgColor
+                        ,'padding' : '0px'
+                        ,'-webkit-appearance': 'none'
+                        })
+                || this.i.css({
+                        'width' : '0px'
+                        ,'visibility' : 'hidden'
+                        });
+        };
+
+        this.change = function (v) {
+            if (v == this.cv) return;
+            this.cv = v;
+            if (
+                this.cH
+                && (this.cH(v) === false)
+            ) return;
+        };
+
+        this.angle = function (v) {
+            return (v - this.o.min) * this.angleArc / (this.o.max - this.o.min);
+        };
+
+        this.draw = function () {
+
+            var c = this.g,                 // context
+                a = this.angle(this.cv)    // Angle
+                , sat = this.startAngle     // Start angle
+                , eat = sat + a             // End angle
+                , sa, ea                    // Previous angles
+                , r = 1;
+
+            c.lineWidth = this.lineWidth;
+
+            c.lineCap = this.lineCap;
+
+            this.o.cursor
+                && (sat = eat - this.cursorExt)
+                && (eat = eat + this.cursorExt);
+
+            c.beginPath();
+                c.strokeStyle = this.o.bgColor;
+                c.arc(this.xy, this.xy, this.radius, this.endAngle - 0.00001, this.startAngle + 0.00001, true);
+            c.stroke();
+
+            if (this.o.displayPrevious) {
+                ea = this.startAngle + this.angle(this.v);
+                sa = this.startAngle;
+                this.o.cursor
+                    && (sa = ea - this.cursorExt)
+                    && (ea = ea + this.cursorExt);
+
+                c.beginPath();
+                    c.strokeStyle = this.pColor;
+                    c.arc(this.xy, this.xy, this.radius, sa - 0.00001, ea + 0.00001, false);
+                c.stroke();
+                r = (this.cv == this.v);
+            }
+
+            c.beginPath();
+                c.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                c.arc(this.xy, this.xy, this.radius, sat - 0.00001, eat + 0.00001, false);
+            c.stroke();
+        };
+
+        this.cancel = function () {
+            this.val(this.v);
+        };
+    };
+
+    $.fn.dial = $.fn.knob = function (o) {
+        return this.each(
+            function () {
+                var d = new k.Dial();
+                d.o = o;
+                d.$ = $(this);
+                d.run();
+            }
+        ).parent();
+    };
+
+})(jQuery);
