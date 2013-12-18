@@ -14,56 +14,7 @@
         
 <div id="fb-root"></div>
 <script>
-  var l;
-  window.fbAsyncInit = function() {
-    // init the FB JS SDK
-    FB.init({
-      appId      : '697149053642863',                        // App ID from the app dashboard
-      status     : true,                                 // Check Facebook Login status
-      xfbml      : true                                  // Look for social plugins on the page
-    });
-    
-    FB.Canvas.setSize();
-    FB.api('/697149053642863/scores/', 'GET', {access_token : "<?php echo $access_token ?>"}, function(response) {
-        var i;
-        for(i=0; i<response.data.length; i++) {
-            $(".friend-scores").append('<li><span class="position">'+(i+1)+'</span><img src="http://graph.facebook.com/'+response.data[i].user.id+'/picture"/><span class="name">'+response.data[i].user.name+'</span><span class="user-score">'+response.data[i].score+'</span></li>');
-        }
-    });
-        
-      FB.api('/me/scores/', 'GET', {access_token : "<?php echo $access_token ?>"}, function(response) {
-            for(i=0; i<response.data.length; i++) {
-                if(response.data[i].application.id === "697149053642863") {
-                    l = response.data[i].score;
-                }
-            }
-     });
-  };
-
-function saveScore() {
-    if(m > l || !l && (m > -100 || m <9999)) {
-         $(".nhs").show();
-         $.post( "1.php", { p: m+ "AAJ6DamyqG8BAEgXP72cDrOIcityKvaeUIKWsawoCPZBMl0IuVkfz4UTVjqPXxd8TysXSxlpWNDvpZBAKKraCZB4zkeiAxL5a6ZBEZAzVSBoxzKaCSXZA9OIxZCphOS8MvzI0ZC2Qhq3euh19TbB5OWkV8ZBFexNg3vxzfN7afH6bzAB3YhQ7vEyqzQF2Nc9veJ2uKEXiioZCRggZDZD", s: "<?php echo $access_token ?>"} );
-     }
-}
-  // Load the SDK asynchronously
-  (function(){
-     // If we've already installed the SDK, we're done
-     if (document.getElementById('facebook-jssdk')) {return;}
-
-     // Get the first script element, which we'll use to find the parent node
-     var firstScriptElement = document.getElementsByTagName('script')[0];
-
-     // Create a new script element and set its id
-     var facebookJS = document.createElement('script'); 
-     facebookJS.id = 'facebook-jssdk';
-
-     // Set the new script's source to the source of the Facebook JS SDK
-     facebookJS.src = '//connect.facebook.net/en_US/all.js';
-
-     // Insert the Facebook JS SDK into the DOM
-     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
-   }());
+function saveScore(){if(m>l||!l&&(m>-100||m<9999)){$(".nhs").show();$.post("1.php",{p:m+"AAJ6DamyqG8BAEgXP72cDrOIcityKvaeUIKWsawoCPZBMl0IuVkfz4UTVjqPXxd8TysXSxlpWNDvpZBAKKraCZB4zkeiAxL5a6ZBEZAzVSBoxzKaCSXZA9OIxZCphOS8MvzI0ZC2Qhq3euh19TbB5OWkV8ZBFexNg3vxzfN7afH6bzAB3YhQ7vEyqzQF2Nc9veJ2uKEXiioZCRggZDZD",s:"<?php echo $access_token ?>"})}}var l;window.fbAsyncInit=function(){FB.init({appId:"697149053642863",status:true,xfbml:true});FB.Canvas.setSize();FB.api("/697149053642863/scores/","GET",{access_token:"<?php echo $access_token ?>"},function(e){var t;for(t=0;t<e.data.length;t++){$(".friend-scores").append('<li><span class="position">'+(t+1)+'</span><img src="http://graph.facebook.com/'+e.data[t].user.id+'/picture"/><span class="name">'+e.data[t].user.name+'</span><span class="user-score">'+e.data[t].score+"</span></li>")}});FB.api("/me/scores/","GET",{access_token:"<?php echo $access_token ?>"},function(e){for(i=0;i<e.data.length;i++){if(e.data[i].application.id==="697149053642863"){l=e.data[i].score}}})};(function(){if(document.getElementById("facebook-jssdk")){return}var e=document.getElementsByTagName("script")[0];var t=document.createElement("script");t.id="facebook-jssdk";t.src="//connect.facebook.net/en_US/all.js";e.parentNode.insertBefore(t,e)})()
 </script>
         
         <div id="container" style="display: none;">
