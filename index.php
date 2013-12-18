@@ -1,7 +1,6 @@
 <?php
+session_start();
     require 'facebook.php';
-
-    global $facebook;
             
     $app_id = '697149053642863';
     $app_secret = '7054403e5f2f3d12e962b35b97e1b53a';
@@ -11,13 +10,12 @@
 
     // Init the Facebook SDK
     
-    if (! ( isset($facebook) ))
-    {
         $facebook = new Facebook(array(
              'appId'  => $app_id,
              'secret' => $app_secret,
         ));
-    }
+        
+        $_SESSION["f"] = $facebook;
     
 
 // Get the current user
@@ -30,6 +28,7 @@ if (!$user) {
         ));
         
         print('<script> top.location.href=\'' . $loginUrl . '\'</script>');
+        
         
 }
 
@@ -58,6 +57,7 @@ $access_token = $facebook->getAccessToken();
       status     : true,                                 // Check Facebook Login status
       xfbml      : true                                  // Look for social plugins on the page
     });
+    
     FB.Canvas.setSize();
     FB.api('/697149053642863/scores/', 'GET', {access_token : "<?php echo $access_token ?>"}, function(response) {
         var i;
