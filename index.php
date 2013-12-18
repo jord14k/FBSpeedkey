@@ -59,15 +59,16 @@ FB.Canvas.setSize();
         
       FB.api('/me/scores/', 'GET', {access_token : "<?php echo $access_token ?>"}, function(response) {
             for(i=0; i<response.data.length; i++) {
+                console.log(response);
                 if(response.data[i].application.id === "697149053642863")
-                    best = response.data[1].score;
+                    best = response.data[i].score;
             }
      });
   };
 
 function saveScore() {
     if(score > best || !best) {
-          FB.api('/me/scores/', 'POST', {access_token : "<?php echo $access_token ?>", score : score}, function(response) {
+         FB.api('/me/scores/', 'POST', {access_token : "<?php echo $access_token ?>", score : score}, function(response) {
             $(".nhs").show();
         });
      }
