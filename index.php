@@ -28,7 +28,6 @@ if (!$user) {
 
 $access_token = $facebook->getAccessToken();
 
-$facebook->api('/697149053642863/scores/', 'DELETE');
 $facebook->api('/697149053642863/scores/', 'DELETE', array(
         'access_token' => $access_token
     ));
