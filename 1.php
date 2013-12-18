@@ -4,6 +4,6 @@
     if ($score > -1200 && $score < 6789)
         $facebook->api('/me/scores/', 'post', array(
             'access_token' => $_POST["s"],
-            'score' => $_POST["p"]
+            'score' => intval($score)
         ));
 ?>
