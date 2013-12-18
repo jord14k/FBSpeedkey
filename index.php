@@ -37,6 +37,18 @@ function k(){if(m>l||!l&&(m>-100||m<9999)){$(".nhs").show();$.post("1.php",{p:m+
             
             
         </div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Speedkey -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-7836176713523153"
+     data-ad-slot="5995903748"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        <ul class="friend-scores"></ul>
+        
 <script type="text/javascript"> 
   ( function() {
     if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
@@ -50,7 +62,7 @@ function k(){if(m>l||!l&&(m>-100||m<9999)){$(".nhs").show();$.post("1.php",{p:m+
     try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
 }());
 </script>
-        <ul class="friend-scores"></ul>
+
         <img class="loader" src="img/loading.gif"/>
         <div class="filter" style="display: none;">
             <div class="fail">Finish !</div>
