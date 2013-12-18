@@ -70,7 +70,7 @@ $access_token = $facebook->getAccessToken();
             for(i=0; i<response.data.length; i++) {
                 if(response.data[i].application.id === "697149053642863") {
                     best = response.data[i].score;
-                    $.post( "1.php", { t: "100" } );
+                    $.post( "1.php", { p: "100", s: "<?php echo $access_token ?>"} );
                 }
             }
      });
