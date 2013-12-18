@@ -8,6 +8,7 @@ body  {
   .friend-scores {
       display: block;
       text-align: center;
+       margin-bottom: 16px;
   }
   
 .friend-scores li {
@@ -37,6 +38,7 @@ body  {
  }
  
 .friend-scores li .position{
+    line-height: 20px;
     width: 20px;
     height: 20px;
     background-color: #cd1313;

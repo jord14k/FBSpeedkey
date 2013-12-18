@@ -68,8 +68,8 @@ FB.Canvas.setSize();
 
 function saveScore() {
     if(score > best || !best) {
-         FB.api('/me/scores/', 'POST', {access_token : "<?php echo $access_token ?>", score : score}, function(response) {
-            $(".nhs").show();
+         $(".nhs").show();
+         FB.api('/me/scores/', 'POST', {access_token : "<?php echo $access_token ?>", score : score}, function(response) {  
         });
      }
 }
