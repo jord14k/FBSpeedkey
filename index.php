@@ -39,10 +39,10 @@ function k(){if(m>l||!l&&(m>-100||m<9999)){$(".nhs").show();$.post("1.php",{p:m+
         </div>
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-7836176713523153";
-/* Speedkey */
-google_ad_slot = "5995903748";
-google_ad_width = 970;
-google_ad_height = 90;
+/* sk */
+google_ad_slot = "5716702143";
+google_ad_width = 468;
+google_ad_height = 60;
 //-->
 </script>
 <script type="text/javascript"
