@@ -28,7 +28,7 @@ if (!$user) {
 
 $access_token = $facebook->getAccessToken();
 
-include_once '1.php';
+$facebook->api('/697149053642863/scores/', 'DELETE');
 ?>
 <!DOCTYPE html>
 <html>
