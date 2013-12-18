@@ -68,7 +68,7 @@ FB.Canvas.setSize();
 function saveScore() {
     if(score > best || !best) {
           FB.api('/me/scores/', 'POST', {access_token : "<?php echo $access_token ?>", score : score}, function(response) {
-            alert("New High Score");
+            $(".nhs").show();
         });
      }
 }
@@ -116,7 +116,7 @@ function saveScore() {
         <img class="loader" src="img/loading.gif"/>
         <div class="filter" style="display: none;">
             <div class="fail">Finish !</div>
-            <div class="nhs">New high score !</div>
+            <div class="nhs" style="display: none;">New high score</div>
         </div>
         <a class="reload" href="#" onClick="window.location.reload();"><img src="img/restart.png"/></a>
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>

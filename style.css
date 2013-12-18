@@ -23,6 +23,19 @@ body  {
      float: left;
  }
  
+ .nhs {
+     line-height: 50px;
+    float: right;
+    width: 210px;
+    text-align: center;
+    background-color: #f1c40f;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -25px;
+ }
+ 
 .friend-scores li .position{
     width: 20px;
     height: 20px;
