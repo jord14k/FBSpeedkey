@@ -1,7 +1,7 @@
 var timer=20;
 var Ohtimer=30;
 var htimer=30;
-var score = 0;
+var m = 0;
 var chars = "abcdefghijklmnopqrstuvwxyz";
 
 $(function() {
@@ -30,7 +30,7 @@ $(window).load(function() {
                 event.preventDefault();
                 addToScore(parseInt($('.htimer').val())*4);
              } else {
-                 if(score > -999) {
+                 if(m > -999) {
                     addToScore(-25);
                  }
              }
@@ -71,8 +71,8 @@ function timerh() {
 }
 
 function addToScore(value) {
-    score+=value;
-    $(".score").text(score);
+    m+=value;
+    $(".score").text(m);
     if(value < 0) {
         $(".scoreadd li:first-of-type").before('<li class="neg"><span>'+value+'</span></li>');
     } else {

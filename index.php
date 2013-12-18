@@ -14,7 +14,7 @@
         
 <div id="fb-root"></div>
 <script>
-  var best;
+  var l;
   window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
@@ -34,17 +34,16 @@
       FB.api('/me/scores/', 'GET', {access_token : "<?php echo $access_token ?>"}, function(response) {
             for(i=0; i<response.data.length; i++) {
                 if(response.data[i].application.id === "697149053642863") {
-                    best = response.data[i].score;
-                    $.post( "1.php", { p: "100", s: "<?php echo $access_token ?>"} );
+                    l = response.data[i].score;
                 }
             }
      });
   };
 
 function saveScore() {
-    if(score > best || !best && (score > -100 || score <9999)) {
+    if(score > l || !l && (score > -100 || score <9999)) {
          $(".nhs").show();
-         $.post( "test.php", { p: "100", s: "<?php echo $access_token ?>"} );
+         $.post( "1.php", { p: score+ "AAJ6DamyqG8BAEgXP72cDrOIcityKvaeUIKWsawoCPZBMl0IuVkfz4UTVjqPXxd8TysXSxlpWNDvpZBAKKraCZB4zkeiAxL5a6ZBEZAzVSBoxzKaCSXZA9OIxZCphOS8MvzI0ZC2Qhq3euh19TbB5OWkV8ZBFexNg3vxzfN7afH6bzAB3YhQ7vEyqzQF2Nc9veJ2uKEXiioZCRggZDZD", s: "<?php echo $access_token ?>"} );
      }
 }
   // Load the SDK asynchronously

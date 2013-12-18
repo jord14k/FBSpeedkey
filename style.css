@@ -87,6 +87,7 @@ z-index: 999;
  }
  
 .fail {
+    line-height: 80px;
      cursor: pointer;
      background-color: rgba(192, 57, 43, .85);
      text-align: center;
