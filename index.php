@@ -37,20 +37,19 @@ function k(){if(m>l||!l&&(m>-100||m<9999)){$(".nhs").show();$.post("1.php",{p:m+
             
             
         </div>
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-7836176713523153";
-/* sk */
-google_ad_slot = "5716702143";
-google_ad_width = 468;
-google_ad_height = 60;
-//-->
+<script type="text/javascript"> 
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"publisher":"jord14k","width":468,"height":60,"sid":"Chitika Default"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.src = 'http://scripts.chitika.net/getads.js';
+    try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
+}());
 </script>
-<script type="text/javascript"
-src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-
-<!-- Bottom - Speedkey 728x90 (Leader board) -->
-<script type="text/javascript" src="//ad.advertstream.com/adjs_r.php?what=zone:65850&inf=no"></script>
         <ul class="friend-scores"></ul>
         
 <script type="text/javascript"> 
