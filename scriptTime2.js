@@ -1,8 +1,6 @@
 var timer=20;
-
 var Ohtimer=30;
 var htimer=30;
-
 var score = 0;
 var chars = "abcdefghijklmnopqrstuvwxyz";
 
@@ -40,7 +38,6 @@ $(window).load(function() {
         }
         
     });
-
 
 });
 

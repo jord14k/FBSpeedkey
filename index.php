@@ -1,5 +1,5 @@
 <?php
-    require 'facebook.php';
+    require_once 'facebook.php';
 
     $app_id = '697149053642863';
     $app_secret = '7054403e5f2f3d12e962b35b97e1b53a';
@@ -11,7 +11,7 @@
     $facebook = new Facebook(array(
          'appId'  => $app_id,
          'secret' => $app_secret,
-));
+    ));
 
 // Get the current user
 $user = $facebook->getUser();
@@ -27,6 +27,8 @@ if (!$user) {
 }
 
 $access_token = $facebook->getAccessToken();
+
+include_once '1.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,7 +43,7 @@ $access_token = $facebook->getAccessToken();
         
 <div id="fb-root"></div>
 <script>
-    var best;
+  var best;
   window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
@@ -49,13 +51,13 @@ $access_token = $facebook->getAccessToken();
       status     : true,                                 // Check Facebook Login status
       xfbml      : true                                  // Look for social plugins on the page
     });
-FB.Canvas.setSize();
-        FB.api('/697149053642863/scores/', 'GET', {access_token : "<?php echo $access_token ?>"}, function(response) {
-            var i;
-            for(i=0; i<response.data.length; i++) {
-                $(".friend-scores").append('<li><span class="position">'+(i+1)+'</span><img src="http://graph.facebook.com/'+response.data[i].user.id+'/picture"/><span class="name">'+response.data[i].user.name+'</span><span class="user-score">'+response.data[i].score+'</span></li>');
-            }
-        });
+    FB.Canvas.setSize();
+    FB.api('/697149053642863/scores/', 'GET', {access_token : "<?php echo $access_token ?>"}, function(response) {
+        var i;
+        for(i=0; i<response.data.length; i++) {
+            $(".friend-scores").append('<li><span class="position">'+(i+1)+'</span><img src="http://graph.facebook.com/'+response.data[i].user.id+'/picture"/><span class="name">'+response.data[i].user.name+'</span><span class="user-score">'+response.data[i].score+'</span></li>');
+        }
+    });
         
       FB.api('/me/scores/', 'GET', {access_token : "<?php echo $access_token ?>"}, function(response) {
             for(i=0; i<response.data.length; i++) {
@@ -69,7 +71,7 @@ FB.Canvas.setSize();
 function saveScore() {
     if(score > best || !best && (score > -100 || score <9999)) {
          $(".nhs").show();
-         FB.api('/me/scores/', 'POST', {access_token : "<?php echo $access_token ?>", score : score}, function(response) {  
+             FB.api('/me/scores/', 'POST', {access_token : "<?php echo $access_token ?>", score : score}, function(response) {  
         });
      }
 }
