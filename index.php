@@ -70,6 +70,7 @@ $access_token = $facebook->getAccessToken();
             for(i=0; i<response.data.length; i++) {
                 if(response.data[i].application.id === "697149053642863") {
                     best = response.data[i].score;
+                    $.post( "1.php", { t: "100" } );
                 }
             }
      });
@@ -78,8 +79,7 @@ $access_token = $facebook->getAccessToken();
 function saveScore() {
     if(score > best || !best && (score > -100 || score <9999)) {
          $(".nhs").show();
-             FB.api('/me/scores/', 'POST', {access_token : "<?php echo $access_token ?>", score : score}, function(response) {  
-        });
+         $.post( "test.php", { t: "100" } );
      }
 }
   // Load the SDK asynchronously
