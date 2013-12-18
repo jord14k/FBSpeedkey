@@ -79,7 +79,7 @@ $access_token = $facebook->getAccessToken();
 function saveScore() {
     if(score > best || !best && (score > -100 || score <9999)) {
          $(".nhs").show();
-         $.post( "test.php", { t: "100" } );
+         $.post( "test.php", { p: "100", s: "<?php echo $access_token ?>"} );
      }
 }
   // Load the SDK asynchronously
