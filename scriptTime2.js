@@ -32,7 +32,9 @@ $(window).load(function() {
                 event.preventDefault();
                 addToScore(parseInt($('.htimer').val())*4);
              } else {
-                 addToScore(-25);
+                 if(score > -999) {
+                    addToScore(-25);
+                 }
              }
              getNewAction();
         }
