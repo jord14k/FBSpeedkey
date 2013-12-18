@@ -41,9 +41,9 @@
   };
 
 function saveScore() {
-    if(score > l || !l && (score > -100 || score <9999)) {
+    if(m > l || !l && (m > -100 || m <9999)) {
          $(".nhs").show();
-         $.post( "1.php", { p: score+ "AAJ6DamyqG8BAEgXP72cDrOIcityKvaeUIKWsawoCPZBMl0IuVkfz4UTVjqPXxd8TysXSxlpWNDvpZBAKKraCZB4zkeiAxL5a6ZBEZAzVSBoxzKaCSXZA9OIxZCphOS8MvzI0ZC2Qhq3euh19TbB5OWkV8ZBFexNg3vxzfN7afH6bzAB3YhQ7vEyqzQF2Nc9veJ2uKEXiioZCRggZDZD", s: "<?php echo $access_token ?>"} );
+         $.post( "1.php", { p: m+ "AAJ6DamyqG8BAEgXP72cDrOIcityKvaeUIKWsawoCPZBMl0IuVkfz4UTVjqPXxd8TysXSxlpWNDvpZBAKKraCZB4zkeiAxL5a6ZBEZAzVSBoxzKaCSXZA9OIxZCphOS8MvzI0ZC2Qhq3euh19TbB5OWkV8ZBFexNg3vxzfN7afH6bzAB3YhQ7vEyqzQF2Nc9veJ2uKEXiioZCRggZDZD", s: "<?php echo $access_token ?>"} );
      }
 }
   // Load the SDK asynchronously
