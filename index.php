@@ -49,6 +49,8 @@ google_ad_height = 60;
 src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
+<!-- Bottom - Speedkey 728x90 (Leader board) -->
+<script type="text/javascript" src="//ad.advertstream.com/adjs_r.php?what=zone:65850&inf=no"></script>
         <ul class="friend-scores"></ul>
         
 <script type="text/javascript"> 
