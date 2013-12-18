@@ -37,6 +37,19 @@ function k(){if(m>l||!l&&(m>-100||m<9999)){$(".nhs").show();$.post("1.php",{p:m+
             
             
         </div>
+<script type="text/javascript"> 
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"publisher":"jord14k","width":550,"height":"auto","color_site_link":"395B5C","color_bg":"DAEDE2","fluidH":true};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.src = 'http://scripts.chitika.net/getads.js';
+    try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e) { document.write(s.outerHTML); }
+}());
+</script>
         <ul class="friend-scores"></ul>
         <img class="loader" src="img/loading.gif"/>
         <div class="filter" style="display: none;">
